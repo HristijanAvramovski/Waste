@@ -1,0 +1,82 @@
+.dialog-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
+  }
+  
+  .dialog-content {
+    width: 100%;
+    background-color: #1e1e2f;
+    color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 190px;
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+  
+  /* Responsive padding and font for small screens */
+  @media (max-width: 480px) {
+    .dialog-content {
+      padding: 1rem;
+    }
+  
+    .dialog-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .dialog-buttons button {
+      width: 100%;
+    }
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .dialog-buttons button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .dialog-buttons button:first-child {
+    background-color: steelblue;
+    color: white;
+  }
+  
+  .dialog-buttons button:last-child {
+    background-color: #ccc;
+  }
+  
+  .dialog-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .dialog-row p {
+    margin: 0;
+    flex: 1; /* Give items equal space */
+    min-width: 120px; /* Prevents squishing on small widths */
+  }
+.price {
+    color: cornflowerblue;
+}  
